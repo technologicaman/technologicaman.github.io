@@ -59,35 +59,35 @@ setTimeout(function () {
 //     .to(".banner_content_h1", { y: -80, }, 0)
 
 
-const quotes = document.querySelectorAll(".banner_content_h1");
+// const quotes = document.querySelectorAll(".banner_content_h1");
 
-function setupSplits() {
-  quotes.forEach(quote => {
-    // Reset if needed
-    if(quote.anim) {
-      quote.anim.progress(1).kill();
-      quote.split.revert();
-    }
+// function setupSplits() {
+//   quotes.forEach(quote => {
+//     // Reset if needed
+//     if(quote.anim) {
+//       quote.anim.progress(1).kill();
+//       quote.split.revert();
+//     }
 
-    quote.split = new SplitText(quote, { 
-      type: "lines,words,chars",
-      linesClass: "split-line"
-    });
+//     quote.split = new SplitText(quote, { 
+//       type: "lines,words,chars",
+//       linesClass: "split-line"
+//     });
 
-    // Set up the anim
-    quote.anim = gsap.from(quote.split.chars, {
-      scrollTrigger: {
-        trigger: quote,
-        toggleActions: "restart pause resume reverse",
-        start: "top 20%",
-      },
-      duration: 0.8, 
-      ease: "circ.out", 
-      y: 50, 
-      stagger: 0.05,
-    });
-  });
-}
+//     // Set up the anim
+//     quote.anim = gsap.from(quote.split.chars, {
+//       scrollTrigger: {
+//         trigger: quote,
+//         toggleActions: "restart pause resume reverse",
+//         start: "top 20%",
+//       },
+//       duration: 0.8, 
+//       ease: "circ.out", 
+//       y: 50, 
+//       stagger: 0.05,
+//     });
+//   });
+// }
 
-ScrollTrigger.addEventListener("refresh", setupSplits);
-setupSplits();
+// ScrollTrigger.addEventListener("refresh", setupSplits);
+// setupSplits();
