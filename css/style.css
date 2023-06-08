@@ -966,7 +966,7 @@ body.show_nav .main_navigation {
 }
 
 .work_slide_outer:hover .work_slide_outer_text h5:before {
-  transform: scale(1.05) translate(0px,2px);
+  transform: scale(1.05) translate(0px, 2px);
 }
 
 .work_slide_outer_text h5 {
@@ -1208,6 +1208,30 @@ body.show_nav .main_navigation {
   top: 0 !important;
   left: 0 !important;
   z-index: 2 !important;
+}
+
+.work_block_list_view {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: ease 0.3s;
+  z-index: 99;
+}
+
+.work_block_list {
+  position: relative;
+  padding: 3vw 0;
+  border: #fff 2px solid;
+  border-width: 1px 0;
+}
+.work_block_list:hover .work_block_list_view{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
 
