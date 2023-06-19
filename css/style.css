@@ -454,7 +454,7 @@ body.show_nav .main_navigation {
 .main_banner {
   position: relative;
   z-index: 1;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .page_content {
@@ -567,7 +567,7 @@ body.show_nav .main_navigation {
 .banner_content h1 {
   color: #fff;
   font-size: 14.5vw;
-  line-height: 1;
+  line-height: 1.1;
   font-family: 'Dosis', sans-serif;
   font-weight: 200;
 }

@@ -86,9 +86,29 @@
     footer.main_footer p {
         font-size: 12px;
     }
+    h6, p, li, input, textarea, select {
+        font-size: clamp(1.5vw, 3rem, 20px);
+    }
 }
 
 @media screen and (max-width:991px) {
+    .main_logo img {
+        width: 150px;
+    }
+    .skill_row {
+        height: 300px;
+        min-height: 300px;
+    }
+    .exp_row {
+        flex-direction: column;
+    }
+    .exp_left_block, .exp_right_block {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .exp_detail {
+        width: 100%;
+    }
     .border-box, .card-box {
         padding: 20px;
     }
@@ -237,6 +257,143 @@
         width: 30px;
         height: 30px;
         line-height: 28px;
+    }
+    .loading__timer {
+        font-size: 25vw;
+    }
+    .main_banner .container {
+        height: 100dvh;
+        display: flex;
+        align-items: center;
+    }
+    .header_row {
+        padding: 15px 0;
+    }
+    .container {
+        max-width: calc(100% - 20px);
+    }
+    .nav_toggle {
+        width: 30px;
+        height: 30px;
+    }
+    .nav_toggle span {
+        width: 20px;
+        height: 3px;
+    }
+    .nav_toggle span+span {
+        width: 15px;
+        margin-top: 3px;
+    }
+    .main_navigation ul li a {
+        font-size: 40px;
+        padding: 5px;
+    }
+    .close_nav:before, .close_nav::after {
+        width: 30px;
+        height: 2px;
+    }
+    .close_nav::after {
+        top: -3px;
+    }
+    .close_nav {
+        margin-top: 10px;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    .btn.small {
+        padding: 5px 20px;
+    }
+    .float_btn{
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+    }
+    .about_right_block, .about_left_block {
+        width: 100%;
+    }
+    .about_left_block {
+        text-align: center;
+    }
+    .about_col {
+        flex-direction: column;
+        padding-top: 100px;
+        justify-content: flex-start;
+    }
+    .main_heading {
+        font-size: 10vw;
+    }
+    .main_heading br {
+        display: none;
+    }
+    .about_block {
+        height: auto;
+    }
+    .about_block:after{
+        display: none;
+    }
+    .blur_block {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    h6, p, li, input, textarea, select {
+        font-size: clamp(1.6vw, 4rem, 22px);
+        line-height: 1.5;
+    }
+    p {
+        margin: 0 0 20px;
+    }
+    .main_heading small {
+        font-size: 5vw;
+    }
+    .exp_detail_block {
+        align-items: flex-start;
+        padding: 20px 0;
+        flex-direction: column;
+    }
+    .exp_years {
+        width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+    }
+    h5 {
+        font-size: clamp(2vw, 4rem, 28px);
+    }
+    .skill_row {
+        height: 200px;
+        min-height: 200px;
+    }
+    .skill_value {
+        font-size: 4vw;
+        margin-bottom: 3vw;
+    }
+    .main_heading.rotate {
+        -webkit-transform: rotate(-90deg) translate(-50%, -23vw);
+        -moz-transform: rotate(-90deg) translate(-50%, -23vw);
+        transform: rotate(-90deg) translate(-50%, -23vw);
+    }
+    .work_slider{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .work_slide_outer {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 0vw;
+    }
+    .contact_row {
+        flex-direction: column;
+    }
+    .contact_img {
+        width: 50%;
+        margin: auto;
+    }
+    .contact_info {
+        padding: 0 5vw;
+        width: auto;
+        margin: auto;
     }
 }
 
