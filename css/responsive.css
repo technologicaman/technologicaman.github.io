@@ -395,6 +395,36 @@
         width: auto;
         margin: auto;
     }
+    .social_block a {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    .main_section .contact_block {
+        padding: 5vw 0 30vw;
+    }
+    .download_cv {
+        margin-top: 30px;
+    }
+    .social_block {
+        padding: 10px 0;
+    }
+    .contact_icon {
+        width: 35px;
+        height: 35px;
+    }
+    .contact_icon img {
+        max-height: 15px;
+        max-width: 17px;
+    }
+    .contact_info_box {
+        align-items: flex-start;
+        margin: 15px 0;
+    }
+    .contact_icon {
+        margin-top: 5px;
+    }
 }
 
 @media screen and (max-width:380px) {
