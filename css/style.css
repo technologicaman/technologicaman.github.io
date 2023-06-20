@@ -566,7 +566,7 @@ body.show_nav .main_navigation {
 
 .banner_content h1 {
   color: #fff;
-  font-size: 12.5vw;
+  font-size: 14.5vw;
   line-height: 1.1;
   font-family: 'Dosis', sans-serif;
   font-weight: 200;
@@ -969,7 +969,9 @@ body.show_nav .main_navigation {
   position: sticky;
   top: 100px;
 }
-
+.work_slide_outer_text h5 small{
+  font-size: 50%;
+}
 .work_slide_outer_text h5:before {
   display: inline-block;
   content: attr(data-text);
