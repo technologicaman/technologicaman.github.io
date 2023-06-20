@@ -37,6 +37,20 @@
       window.addEventListener('mousemove', editCursor);
 
 })();
+$(document).ready(function () {
+      setTimeout(() => {
+            $('body').addClass("remove-loading")
+      }, 2000);
+      setTimeout(() => {
+            $('body').removeClass("loading remove-loading")
+      }, 3000);
+      $(".nav_toggle").click(function () {
+            $('body').addClass("show_nav");
+      })
+      $(".close_nav, .main_navigation ul li a").click(function () {
+            $('body').removeClass("show_nav");
+      })
+})
 
 $(".work_filters button").click(function (e) {
       $(".work_slider .item").removeClass("show")
