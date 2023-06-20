@@ -299,11 +299,13 @@
         margin-top: 10px;
     }
     .btn {
-        padding: 10px 20px;
-        font-size: 18px;
+        padding: 15px 30px;
+        font-size: 24px;
+        min-width: 150px;
     }
     .btn.small {
-        padding: 5px 20px;
+        padding: 10px 20px;
+        font-size: 20px;
     }
     .float_btn{
         position: relative;
@@ -336,6 +338,14 @@
     .blur_block {
         padding: 20px;
         border-radius: 15px;
+    }
+    .skill_info span {
+        font-size: 3vw;
+    }
+    .skill_info img {
+        width: auto;
+        max-height: 9vw;
+        margin-bottom: 6px;
     }
     h6, p, li, input, textarea, select {
         font-size: clamp(1.6vw, 4rem, 22px);
@@ -424,6 +434,10 @@
     }
     .contact_icon {
         margin-top: 5px;
+    }
+    .banner_content h1{
+        font-size: 18vw;
+        margin-bottom: 50px;
     }
 }
 
