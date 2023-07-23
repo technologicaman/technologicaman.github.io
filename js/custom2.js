@@ -43,7 +43,7 @@ gsap.registerPlugin(ScrollTrigger);
 //  three js
 
 setTimeout(function () {
-    // $('.loader__bg').fadeOut(300);
+     $('.loader__bg').fadeOut(300);
 
 }, time + 1000);
 
