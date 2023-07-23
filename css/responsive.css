@@ -439,6 +439,9 @@
         font-size: 18vw;
         margin-bottom: 50px;
     }
+    .intro_video video {
+        top: 80%;
+    }
 }
 
 @media screen and (max-width:380px) {
