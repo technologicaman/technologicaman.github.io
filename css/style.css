@@ -628,7 +628,7 @@ body.show_nav .main_navigation {
   justify-content: center;
   position: sticky;
   top: 1vw;
-  z-index: 9999;
+  z-index: 9;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: ease 0.5s;

@@ -31,10 +31,12 @@
             cursorHtml.style.top = y + 'px';
       };
 
+      if(window.innerWidth > 991){
       link.forEach(b => b.addEventListener('mouseenter', appendSpan));
       link.forEach(b => b.addEventListener('mousemove', animateit));
       link.forEach(b => b.addEventListener('mouseleave', animateit, removeSpan));
-      window.addEventListener('mousemove', editCursor);
+            window.addEventListener('mousemove', editCursor);
+      }
 
 })();
 $(document).ready(function () {

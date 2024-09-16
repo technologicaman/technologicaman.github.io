@@ -405,6 +405,10 @@
         width: auto;
         margin: auto;
     }
+    .full_block {
+        min-height: 100dvh;
+        height: auto;
+    }
     .social_block a {
         width: 30px;
         height: 30px;
